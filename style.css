@@ -36,12 +36,10 @@ h1 {
 }
 
 .codeImage {
-  width: auto;
-  height: auto;
   border-radius: 5px;
   margin: auto;
-  max-width: 535px;
   box-shadow: 0 5px 10px -5px #00000070;
+  max-width: 100%;
 }
 
 .gamingImage {
@@ -49,8 +47,8 @@ h1 {
   height: auto;
   border-radius: 5px;
   margin: auto;
-  max-width: 535px;
   box-shadow: 0 5px 10px -5px #00000070;
+  max-width: 100%;
 }
 
 .resumeImage {
