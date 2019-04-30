@@ -1,71 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Ventus | Homepage</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="shortcut icon" type="image/png" href="img/VentusCircular.png">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
-      <link href="https://fonts.googleapis.com/css?family=Concert+One|Raleway" rel="stylesheet">
-
-</head>
-<body>
-
-
-      <div class="wrapper">
-            <header>
-
-                  <nav>
-
-                        <div class="menu-icon">
-                              <i class="fa fa-bars fa-2x"></i>
-                        </div>
-
-                        <div class="logo">
-                              <input type="image" class="logoImage" style="outline:none;" src="img\VentusCircular.png" height="60px" width="60px">
-                        </div>
-
-                        <div class="name">
-                              <h1 style="color:#0148BC;font-size:50px;font-family:'Raleway',sans-serif;">VENTUS</h1>
-                        </div>
-
-                        <div class="menu">
-                              <ul>
-                                    <li style="background-color:#0148BC;"><a href="index.html" style="color:white;">Home</a></li>
-                                    <li><a href="resume.html">Résumé</a></li>
-                                    <li><a href="codeDump.html">Code Dump</a></li>
-                                    <li><a href="https://chrome.google.com/webstore/detail/orbit-newtab/klcbneehagefpihiifgdapgfiihdokfo" target="_blank">Chrome Extension</a></li>
-                              </ul>
-                        </div>
-                  </nav>
-
-            </header>
-
-            <div class="content">
-              <h2>Ventus</h2>
-              <div class="clearfix">
-                <div class="box">
-                <div class="text-box" style="font-size:30px;">Who Am I?</div>
-                <br>
-                <div class="text-box" style="background-color:white;"><p style="color:#0148BC;font-size:30px;" id="myAge">Age</p></div>
-                <br>
-                <input type="image" src="img/gaming.jpg" class="gamingImage">
-                </div>
-                <div class="box1">
-                <div class="text-box">This website is a hub for projects and interests of mine.</div>
-                <br>
-                <input type="image" src="img/code.jpg" class="codeImage">
-                <br>
-                <br>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="sideContent">
-
+<html lang="en" dir="ltr">
+  <head>
+    <title>Ventus | Homepage</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Orbit, Orbit Elite, Orbit Newtab, Newtab, Newtab Page">
+    <meta name="description" content="Newtab Page For Chrome With A Stunning Interface And An Award Winning Design">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="other/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <meta name="google-site-verification" content="SaGWCBokBRf8VgcohCVSh4_6o024AfToS7zkjBob7m8"/>
+    <style media="screen">
+    .box p {
+      width: 200px !important;
+    }
+    </style>
+  </head>
+  <body>
+  <div class="nav">
+      <a class="fas fa-bars" id="sideNavOpen"></a>
+      <h1 id="header-title">VENTUS</h1>
+      <img id="header-logo" src="img/icon.png">
+  </div>
+  <div class="sideNav" id="sideNav">
+    <a href="javascript:void(0)" class="closebtn" id="sideNavClose">&times;</a>
+    <ul>
+      <h2 class="links">Links</h2>
+      <li><a href="index.html" id="item1">Homepage</a></li>
+      <br>
+      <li><a href="resume.html" id="item2">Resume</a></li>
+      <br>
+      <li><a href="https://chrome.google.com/webstore/detail/orbit-newtab/klcbneehagefpihiifgdapgfiihdokfo" id="item3">Chrome Extension</a></li>
+      <br>
+      <div class="sideNavCredits">
+        <a href="https://benmasel.github.io/" class="sideNavCreditLink" target="_blank">Made By Ventus</a>
       </div>
-      <script src="script.js" charset="utf-8"></script>
-</body>
+    </ul>
+  </div>
+  <div class="content">
+    <h2>Who Am I?</h2>
+    <p style="color:#0148BC;font-size:30px;" id="myAge">Age</p>
+    <br>
+    <br>
+    <h2>What Do I Do?</h2>
+    <p style="color:#0148BC;font-size:30px;">I program websites for various organisations such as <a href="https://orbitelite.github.io/" target="_blank">Orbit Elite</a>, i program chrome extensions such as <a href="https://chrome.google.com/webstore/detail/orbit-newtab/klcbneehagefpihiifgdapgfiihdokfo" target="_blank">Orbit Newtab</a>.</p>
+  <div class="footer">
+    <br>
+    <br>
+    <a href="https://chrome.google.com/webstore/detail/orbit-newtab/klcbneehagefpihiifgdapgfiihdokfo" target="_blank">Download my extension for Chrome</a>
+    <br>
+    <p>© 2018-2019</p>
+    </div>
+  <script src="script.js" charset="utf-8"></script>
+  </body>
 </html>

@@ -1,3 +1,15 @@
+document.getElementById("sideNavOpen").addEventListener("click", sideNavOpen);
+document.getElementById("sideNavClose").addEventListener("click", sideNavClose);
+
+function sideNavOpen() {
+  document.getElementById("sideNav").style.width = "250px";
+}
+
+
+function sideNavClose() {
+  document.getElementById("sideNav").style.width = "0px";
+}
+
 function getAge(d1, d2){
     d2 = d2 || new Date();
     var diff = d2.getTime() - d1.getTime();
