@@ -1,22 +1,19 @@
+/* Global CSS */
+
 body {
   text-align: center;
+  font-family: 'Rubik', sans-serif;
+  outline: none;
+}
+
+.raleway {
   font-family: 'Raleway', sans-serif;
 }
 
-header {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-}
-
-.resume-header {
-  background-image: linear-gradient(to right, #31a6ff, #31c7ff);
-  color: white;
-}
-
-.resume-a {
-  color: white !important;
+a {
+  text-decoration: none;
+  font-size: 30px;
+  outline: none;
 }
 
 h2 {
@@ -27,6 +24,10 @@ h3 {
   font-size: 40px;
 }
 
+button {
+  outline: none;
+}
+
 p {
   font-size: 25px;
 }
@@ -35,17 +36,39 @@ i {
   font-size: 100px;
 }
 
-#header-logo {
-  width: 45px;
-  height: 45px;
-  position: relative;
-  top: 12.5px;
-  border-radius: 100%;
+.install {
+  width: 200px;
+  height: 75px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #31c7ff, #31a6ff);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+  z-index: 1;
 }
 
-#codingImage {
-  max-width: 300px;
-  height: auto;
+.inline {
+  display: inline-block;
+}
+
+.installButton {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  position: relative;
+  top: 22.5px;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .column2 {
@@ -58,19 +81,74 @@ i {
   width: 33.33%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* From Top Left --> Bottom Right */
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 }
 
-nav {
-
+.features {
+  width: 100%;
+  color: white;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  border-radius: 150px 150px 75px 75px;
+  background-image: linear-gradient(to right, #31a6ff, #31c7ff);
 }
 
-a {
-  font-size: 30px;
+.line {
+  width: 75vw;
+  height: 4px;
+  background-color: black;
+  border-radius: 250px;
+}
+
+#header-logo {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: 12.5px;
+  border-radius: 100%;
+}
+
+#codingImage {
+  width: 20vw;
+  max-width: 800px;
+  min-width: 300px;
+  height: auto;
+}
+
+.work-experience {
+  background-image: linear-gradient(to right, #16A085, #138D75);
+  width: 100%;
+  color: white;
+  padding-top: 2.5%;
+  padding-bottom: 7.5%;
+  border-radius: 150px 150px 75px 75px;
+}
+
+#sayHello {
+  background-color: #16A085;
+  border-radius: 50px;
+  padding: 5px;
+  color: white;
+  border: none;
+  width: 250px;
+  height: 75px;
+  transition: .2s;
+  font-family: 'Rubik', sans-serif;
+}
+
+#sayHello:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+  background-color: #138D75;
+  transform: scale(1.01);
+}
+
+.abstract-experience h1 {
+  font-size: 75px;
 }
 
 .content {
@@ -84,18 +162,12 @@ a {
   font-size: 25px;
 }
 
-#browser {
-  width: 300px;
-  height: 300px;
+.hex-blue {
+  color: #31A6FF;
 }
 
-.features {
-  width: 100%;
-  color: white;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  border-radius: 150px 150px 75px 75px;
-  background-image: linear-gradient(to right, #31a6ff, #31c7ff);
+.work-experience h1 {
+  font-size: 65px;
 }
 
 .footer {
@@ -105,18 +177,6 @@ a {
   border-radius: 150px 150px 0px 0px;
   background-color: #E5E8E8;
   font-family: 'Concert One', cursive;
-}
-
-.install {
-  width: 200px;
-  height: 75px;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  border-radius: 15px;
-  background-image: linear-gradient(to right, #31c7ff, #31a6ff);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
-  z-index: 1;
 }
 
 .logo {
@@ -155,120 +215,34 @@ h5 {
   font-size: 50px;
 }
 
-.about {
-
+.space {
+  width: 20px;
 }
 
-.mqList {
-
+.space1 {
+  width: 5px;
 }
 
-.installButton {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  position: relative;
-  top: 22.5px;
+.profile h1 {
+  font-size: 65px;
 }
 
-
-.resume #header-title {
-  font-size: 75px;
-  color: #1976D2;
-  position: relative;
-  margin-top: 100px;
-  font-family: 'Raleway', sans-serif;
-  top: 125px;
+.about h2 {
+  font-size: 40px;
 }
 
-.resume #header-logo {
-  outline: none;
-  height: 150px;
-  width: 150px;
-  position: relative;
-  top: -175px;
+.twitterLink {
+  color: #353438;
+  font-size: 60px;
+  transition: .3s;
 }
 
-.resume .info-box {
-  text-align: center;
+.twitterLink:hover {
+ color: #1DA1F3;
+ transform: scale(1.1);
 }
 
-.resume .container {
-  text-align: center;
-  display: inline-block;
-}
-
-.resume .box {
-  float: left;
-  padding: 10px;
-}
-
-.resume .box p {
-  width: auto;
-}
-
-.resume h2 {
-  font-size: 50px;
-  color: #0D47A1;
-}
-
-.resume li {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.resume ul {
-  text-align: left;
-  text-decoration: none;
-}
-
-.resume {
-  width: 100%;
-  height: auto;
-  background-color: white;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.resume .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.resume .line {
-  background-color: #2357AB;
-  width: 10px;
-  height: 37.5vw;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-}
-
-.resume .box {
-  float: left;
-  width: 50%;
-  padding: 50px;
-  text-align: center;
-}
-
-.resume .box1 {
-  float: right;
-  width: 50%;
-  padding: 50px;
-  text-align: center;
-}
-
-.resume-footer {
-  margin-top: 200px;
-}
-
-.resume-content {
-  margin-top: 150px;
-}
+/* Media Queries */
 
 @media screen and (max-width: 900px) {
   .column2 {
@@ -281,34 +255,14 @@ h5 {
     display: inline-block;
   }
 
-  .mqListLink {
-    font-size: 25px;
-    padding: 0px;
-    text-align: center;
-  }
-
   h5 {
     font-size: 99px;
     position: relative;
     top: 250px;
   }
 
-  .mqList {
-
-  }
-
-  .navDiv {
-
-  }
-
   .features {
-    border-radius: 150px 150px 0px 0px;
-  }
-
-  .triangle {
-    border-left: 233px solid transparent;
-    border-right: 233px solid transparent;
-    border-top: 458px solid #31A6ff;
+    border-radius: 150px 150px 150px 150px;
   }
 
   .install {
