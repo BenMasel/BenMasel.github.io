@@ -10,6 +10,24 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+/* Colour Classes */
+
+.green {
+  color: #16A085;
+}
+
+.white {
+  color: white;
+}
+
+.purple {
+  color: #551A8B;
+}
+
+.tal {
+  text-align: left;
+}
+
 a {
   text-decoration: none;
   font-size: 30px;
@@ -26,6 +44,10 @@ h3 {
 
 button {
   outline: none;
+}
+
+.workExperienceDescription {
+  width: 500px;
 }
 
 p {
@@ -92,8 +114,8 @@ header {
 .features {
   width: 100%;
   color: white;
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding-top: 12.5vw;
+  padding-bottom: 12.5vw;
   border-radius: 150px 150px 75px 75px;
   background-image: linear-gradient(to right, #31a6ff, #31c7ff);
 }
@@ -113,8 +135,12 @@ header {
   border-radius: 100%;
 }
 
+.vp {
+  font-size: 3.25vw;
+}
+
 #codingImage {
-  width: 20vw;
+  width: 22.5vw;
   max-width: 800px;
   min-width: 300px;
   height: auto;
@@ -137,14 +163,14 @@ header {
   border: none;
   width: 250px;
   height: 75px;
-  transition: .2s;
+  transition: .4s;
   font-family: 'Rubik', sans-serif;
 }
 
 #sayHello:hover {
-  box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #138D75;
-  transform: scale(1.01);
+  transform: scale(1.05);
 }
 
 .abstract-experience h1 {
@@ -244,7 +270,13 @@ h5 {
 
 /* Media Queries */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1500px) {
+  .vp {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
   .column2 {
     float: none;
     display: inline-block;
@@ -253,6 +285,11 @@ h5 {
   .column3 {
     float: none;
     display: inline-block;
+  }
+
+  .profile .row .column3 {
+    display: block;
+    width: auto;
   }
 
   h5 {
@@ -265,24 +302,16 @@ h5 {
     border-radius: 150px 150px 150px 150px;
   }
 
-  .install {
-    width: 150px;
-    height: 40px;
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, #31c7ff, #31a6ff);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
-    z-index: 1;
+  .workExperienceDescription {
+    width: 200px;
   }
 
-  .installButton {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    position: relative;
-    top: 7.5px;
+  .fullStop {
+    display: none;
+  }
+
+  .footer {
+    padding-bottom: 22.5%;
   }
 }
 

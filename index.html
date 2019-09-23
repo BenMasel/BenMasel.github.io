@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Ben Masel | Portfolio</title>
+    <title>Ventus | Portfolio</title>
   </head>
   <body>
     <div class="install anim">
@@ -18,7 +18,7 @@
       <div class="row">
         <div class="column2">
           <div class="title inline">
-            <h1>Ben Masel</h1>
+            <h1>Ventus</h1>
           </div>
           <div class="title inline"><img src="img/logo.png" alt="logo" id="header-logo"></div>
         </div>
@@ -35,7 +35,7 @@
     </header>
     <div class="content">
       <img src="img/coding.svg" alt="code on a computer" id="codingImage">
-      <h2>Coder. Designer. Computer Stuff.</h2>
+      <h2 class="vp">Coder. Designer. Computer Stuff.</h2>
       <br>
       <div class="features">
         <div class="row">
@@ -61,25 +61,31 @@
         <br>
         <br>
         <h1 class="anim hex-blue">Profile</h1>
-        <h2 class="anim">I'm a creative front-end webdeveloper</h2>
+        <h3 class="anim">I'm a creative front-end webdeveloper</h3>
         <div class="container">
           <div class="line inline anim"></div>
         </div>
         <br>
         <br>
-        <div class="anim">
-          <h2 class="inline">About</h2>
-          <div class="inline space1"></div>
-          <h2 class="hex-blue inline">Me</h2>
+        <div class="row">
+          <div class="column3">
+            <div class="anim">
+              <h2 class="inline">About</h2>
+              <div class="inline space1"></div>
+              <h2 class="hex-blue inline">Me</h2>
+              <p class="anim">I am an allround web developer. I am a young programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality.</p>
+            </div>
+          </div>
+          <div class="column3">
+            <img src="img/logo.png" alt="my face" style="max-width: 450px;">
+          </div>
+          <div class="column3">
+            <h2 class="hex-blue">Details</h2>
+            <p class="inline">Location:</p>
+            <p class="hex-blue inline">Australia, Earth</p>
+          </div>
         </div>
-        <p class="inline anim" style="width:80vw;">I am an allround web developer. I am a young programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality.</p>
         <br>
-        <h2 class="hex-blue">Details</h2>
-        <p class="inline">Age:</p>
-        <p class="hex-blue inline" id="age"></p>
-        <br>
-        <p class="inline">Location:</p>
-        <p class="hex-blue inline">Australia, Earth</p>
         <br>
         <br>
         <br>
@@ -96,16 +102,16 @@
               </div>
               <a class="anim" href="https://chrome.google.com/webstore/detail/orbit-newtab/klcbneehagefpihiifgdapgfiihdokfo?hl=en" target="_blank" style="font-size:50px;color:white;">Orbit Newtab</a>
               <div class="container">
-                <p class="inline anim" style="width:500px;">Give a clean and modern look to your default Chrome homepage.</p>
+                <p class="inline anim workExperienceDescription">Give a clean and modern look to your default Chrome homepage.</p>
               </div>
             </div>
             <div class="column2">
               <i class="far fa-window-maximize anim" style="position:relative;top:30px;font-size:100px;"></i>
               <br>
               <div style="height:100px;"></div>
-              <a class="anim" href="https://benmasel.github.io" style="font-size:50px;color: white;">This website</a>
+              <a class="anim white" href="https://benmasel.github.io" style="font-size:50px;">This website</a>
               <div class="container">
-                <p class="inline anim" style="width:500px;">Does this count? To be honest, i don't really care if it isn't 😎.</p>
+                <p class="inline anim anim workExperienceDescription">Does this count? To be honest, i don't really care if it doesn't 😎.</p>
               </div>
             </div>
           </div>
@@ -115,13 +121,12 @@
           <div class="anim">
             <h1 class="inline">I have</h1>
             <div class="space1 inline"></div>
-            <h1 class="inline" style="color:#16A085;">potential</h1>
-            <h1 class="inline">.</h1>
+            <h1 class="inline green">potential</h1>
+            <h1 class="inline fullStop">.</h1>
           </div>
-          <h2 class="anim">Teach me, and i will learn.</h2>
         </div>
       </div>
-      <button type="button" name="button" id="sayHello"><a href="mailto:masel.benjamin@gmail.com" style="color: white;">Say Hello!</a></button>
+      <button type="button" name="button" id="sayHello"><a class="white" id="say-hello-mailto">Say Hello!</a></button>
       <br>
       <br>
       <br>
@@ -132,16 +137,16 @@
           <div class="row">
             <div class="column2">
               <p class="footer-text">DESIGNED BY</p>
-              <h3 style="font-size:50px;position:relative;top:-25px;" class="footer-main-text">Ben Masel | Ventus</h3>
+              <h3 style="font-size:50px;position:relative;top:-25px;" class="footer-main-text">Ventus</h3>
               <p class="footer-text" style="font-size:25px;position:relative;top:-60px;">COPYRIGHT GPL-3.0 © 2019</p>
             </div>
             <div class="column2">
               <div class="row">
                 <div class="column2">
                   <p class="footer-text">CONTACT</p>
-                  <a href="mailto:masel.benjamin@gmail.com" class="footer-main-text">Email</a>
+                  <a class="footer-main-text" id="footer-mailto">Email</a>
                 </div>
-                <div class="column2" style="text-align:left;">
+                <div class="column2 tal">
                   <p class="footer-text">SOCIAL</p>
                   <a href="https://twitter.com/masel_benjamin" target="_blank" class="fab fa-twitter twitterLink"></a>
                 </div>
