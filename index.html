@@ -11,7 +11,7 @@
     <title>Ventus | Portfolio</title>
   </head>
   <body>
-    <div class="install anim">
+    <div class="install anim" id="install">
       <a href="https://chrome.google.com/webstore/detail/orbit-newtab/klcbneehagefpihiifgdapgfiihdokfo?hl=en" target="_blank" class="installButton">My Extension</a>
     </div>
     <header>
@@ -51,29 +51,26 @@
           </div>
           <div class="column3 anim">
             <i class="fas fa-gamepad"></i>
-            <h3>Likes To Play Games</h3>
+            <h3>Epic Gamer</h3>
             <p>Brawlhalla, Minecraft</p>
           </div>
         </div>
       </div>
       <br>
-      <div class="profile anim">
+      <div class="profile anim" id="profile">
         <br>
         <br>
         <h1 class="anim hex-blue">Profile</h1>
         <h3 class="anim">I'm a creative front-end webdeveloper</h3>
-        <div class="container">
-          <div class="line inline anim"></div>
-        </div>
-        <br>
-        <br>
         <div class="row">
           <div class="column3">
             <div class="anim">
               <h2 class="inline">About</h2>
               <div class="inline space1"></div>
               <h2 class="hex-blue inline">Me</h2>
-              <p class="anim">I am an allround web developer. I am a young programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality.</p>
+              <div class="container">
+                <p class="anim inline" style="width: 375px;">I am an allround web developer. I am a young programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality.</p>
+              </div>
             </div>
           </div>
           <div class="column3">
@@ -83,8 +80,11 @@
             <h2 class="hex-blue">Details</h2>
             <p class="inline">Location:</p>
             <p class="hex-blue inline">Australia, Earth</p>
+            <br>
+            <a href="https://twitter.com/masel_benjamin" target="_blank" style="font-size: 25px;">Follow me @masel_benjamin</a>
           </div>
         </div>
+      </div>
         <br>
         <br>
         <br>
@@ -102,7 +102,7 @@
               </div>
               <a class="anim" href="https://chrome.google.com/webstore/detail/orbit-newtab/klcbneehagefpihiifgdapgfiihdokfo?hl=en" target="_blank" style="font-size:50px;color:white;">Orbit Newtab</a>
               <div class="container">
-                <p class="inline anim workExperienceDescription">Give a clean and modern look to your default Chrome homepage.</p>
+                <p class="inline anim ExperienceDescription">Give a clean and modern look to your default Chrome homepage.</p>
               </div>
             </div>
             <div class="column2">
@@ -111,25 +111,123 @@
               <div style="height:100px;"></div>
               <a class="anim white" href="https://benmasel.github.io" style="font-size:50px;">This website</a>
               <div class="container">
-                <p class="inline anim anim workExperienceDescription">Does this count? To be honest, i don't really care if it doesn't 😎.</p>
+                <p class="inline anim anim ExperienceDescription">Does this count? To be honest, i don't really care if it doesn't 😎.</p>
               </div>
             </div>
           </div>
         </div>
         <br>
-        <div class="abstract-experience">
+        <div class="potential">
           <div class="anim">
-            <h1 class="inline">I have</h1>
-            <div class="space1 inline"></div>
-            <h1 class="inline green">potential</h1>
+            <h1 class="inline change">I have</h1>
+            <div class="space1 inline change"></div>
+            <h1 class="inline green change">potential</h1>
             <h1 class="inline fullStop">.</h1>
+          </div>
+          <div class="anim">
+            <button type="button" name="button" id="sayHello"><a class="white" id="say-hello-mailto">Say Hello!</a></button>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="skills">
+        <h1 class="anim">Skills</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="column3 anim">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+          </div>
+          <div class="column3 anim">
+            <i class="fab fa-css3"></i>
+            <h3>CSS</h3>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+          </div>
+          <div class="column3 anim">
+            <i class="fab fa-js-square"></i>
+            <h3>JS</h3>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="far fa-star inline"></p>
+            <p class="far fa-star inline"></p>
+            <p class="far fa-star inline"></p>
           </div>
         </div>
       </div>
-      <button type="button" name="button" id="sayHello"><a class="white" id="say-hello-mailto">Say Hello!</a></button>
       <br>
       <br>
+      <div class="teach-me">
+        <div class="anim">
+          <h1 class="inline">Teach me, and i will</h1>
+          <div class="space1 inline"></div>
+          <h1 class="inline red">learn</h1>
+          <h1 class="inline fullStop">.</h1>
+        </div>
+      </div>
       <br>
+      <br>
+      <div class="tools">
+        <h1 class="anim">Tools</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="column3 anim">
+            <i class="fab fa-github"></i>
+            <h3>Github</h3>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star-half-alt inline"></p>
+            <p class="far fa-star inline"></p>
+          </div>
+          <div class="column3 anim">
+            <i class="fab fa-bitbucket"></i>
+            <h3>Bitbucket</h3>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star-half-alt inline"></p>
+            <p class="far fa-star inline"></p>
+          </div>
+          <div class="column3 anim">
+            <i class="fas fa-atom"></i>
+            <h3>Atom</h3>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="fas fa-star inline"></p>
+            <p class="far fa-star inline"></p>
+            <p class="far fa-star inline"></p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="anything">
+        <div class="anim">
+          <h1 class="inline">“You can do</h1>
+          <div class="space1 inline"></div>
+          <h1 class="inline purple">anything</h1>
+          <div class="space1 inline"></div>
+          <h1 class="inline">you set your mind to.”</h1>
+          <h1>- Benjamin Franklin</h1>
+        </div>
+      </div>
       <br>
       <br>
       <div class="footer">
@@ -160,6 +258,7 @@
         </div>
         <div style="font-size:25px;color:#353438;">Icons made by <a href="https://www.freepik.com/" title="Freepik" style="font-size:25px;">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style="font-size:25px;">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" style="font-size:20px;">CC 3.0 BY</a></div>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="script.js"></script>
   </body>
 </html>

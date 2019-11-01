@@ -10,7 +10,15 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.change {
+  line-height: 0px;
+}
+
 /* Colour Classes */
+
+.poop {
+  background-color: green !important;
+}
 
 .green {
   color: #16A085;
@@ -23,6 +31,12 @@ body {
 .purple {
   color: #551A8B;
 }
+
+.red {
+  color: #C70039;
+}
+
+/* Colour Classes END */
 
 .tal {
   text-align: left;
@@ -46,10 +60,6 @@ button {
   outline: none;
 }
 
-.workExperienceDescription {
-  width: 500px;
-}
-
 p {
   font-size: 25px;
 }
@@ -57,6 +67,12 @@ p {
 i {
   font-size: 100px;
 }
+
+.workExperienceDescription {
+  width: 500px;
+}
+
+/* Install Button */
 
 .install {
   width: 200px;
@@ -68,10 +84,7 @@ i {
   background-image: linear-gradient(to right, #31c7ff, #31a6ff);
   box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
   z-index: 1;
-}
-
-.inline {
-  display: inline-block;
+  transition: .5s;
 }
 
 .installButton {
@@ -82,11 +95,18 @@ i {
   top: 22.5px;
 }
 
+/* Install Button END */
+
+.inline {
+  display: inline-block;
+}
+
 .container {
   text-align: center;
 }
 
 /* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
@@ -127,6 +147,13 @@ header {
   border-radius: 250px;
 }
 
+.ability-line {
+  width: 50vw;
+  height: 4px;
+  background-color: white;
+  border-radius: 250px;
+}
+
 #header-logo {
   width: 45px;
   height: 45px;
@@ -150,8 +177,8 @@ header {
   background-image: linear-gradient(to right, #16A085, #138D75);
   width: 100%;
   color: white;
-  padding-top: 2.5%;
-  padding-bottom: 7.5%;
+  padding-top:  5vw;
+  padding-bottom: 7.5vw;
   border-radius: 150px 150px 75px 75px;
 }
 
@@ -173,7 +200,11 @@ header {
   transform: scale(1.05);
 }
 
-.abstract-experience h1 {
+.potential h1 {
+  font-size: 75px;
+}
+
+.teach-me h1 {
   font-size: 75px;
 }
 
@@ -188,11 +219,56 @@ header {
   font-size: 25px;
 }
 
+.skills {
+  width: 100%;
+  color: white;
+  padding-top: 5vw;
+  padding-bottom: 7.5vw;
+  border-radius: 150px 150px 75px 75px;
+  background-image: linear-gradient(to right, #C70039, #FF5733);
+}
+
+.tools {
+  width: 100%;
+  color: white;
+  padding-top: 5vw;
+  padding-bottom: 7.5vw;
+  border-radius: 150px 150px 75px 75px;
+  background-image: linear-gradient(to right, #512DA8, #8E24AA);
+}
+
+.purple {
+  color: #8E24AA;
+}
+
+.anything h1 {
+  font-size: 40px;
+}
+.skills p {
+  position: relative;
+  top: -30px;
+  font-size: 22.5px;
+}
+
+.tools p {
+  position: relative;
+  top: -30px;
+  font-size: 22.5px;
+}
+
 .hex-blue {
   color: #31A6FF;
 }
 
 .work-experience h1 {
+  font-size: 65px;
+}
+
+.skills h1 {
+  font-size: 65px;
+}
+
+.tools h1 {
   font-size: 65px;
 }
 
@@ -302,7 +378,7 @@ h5 {
     border-radius: 150px 150px 150px 150px;
   }
 
-  .workExperienceDescription {
+  .ExperienceDescription {
     width: 200px;
   }
 

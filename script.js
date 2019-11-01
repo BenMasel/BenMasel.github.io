@@ -2,6 +2,19 @@
 window.sr = ScrollReveal();
 sr.reveal('.anim');
 
+$(function(){
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+        var os = $('#profile').offset().top; // pixels to the top of div1
+        var ht = $('#profile').height(); // height of div1 in pixels
+        // if you've scrolled further than the top of div1 plus it's height
+        // change the color. either by adding a class or setting a css property
+        if(scroll > os + ht){
+            $('#install').addClass('poop');
+        }
+    });
+});
+
 // Age Calulator
 // function calculate_age(dob) {
 //    var diff_ms = Date.now() - dob.getTime();
