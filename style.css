@@ -354,13 +354,11 @@ h5 {
 
 @media screen and (max-width: 1020px) {
   .column2 {
-    float: none;
-    display: inline-block;
+    width: 100%;
   }
 
   .column3 {
-    float: none;
-    display: inline-block;
+    width: 100%;
   }
 
   .profile .row .column3 {
@@ -389,6 +387,8 @@ h5 {
   .footer {
     padding-bottom: 22.5%;
   }
+
+
 }
 
 @media screen and (min-width: 1435px) {
