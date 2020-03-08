@@ -1,4 +1,7 @@
 /* Global CSS */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   text-align: center;
@@ -15,7 +18,6 @@ body {
 }
 
 /* Colour Classes */
-
 .poop {
   background-color: green !important;
 }
@@ -37,7 +39,6 @@ body {
 }
 
 /* Colour Classes END */
-
 .tal {
   text-align: left;
 }
@@ -68,12 +69,22 @@ i {
   font-size: 100px;
 }
 
+.read-more-animation .fa-angle-down {
+  position: relative;
+  top: 45px;
+  font-size: 35px;
+  display: block;
+  margin: 0px;
+  padding: none;
+  height: 15px;
+  width: 0px;
+}
+
 .workExperienceDescription {
   width: 500px;
 }
 
 /* Install Button */
-
 .install {
   width: 200px;
   height: 75px;
@@ -96,7 +107,6 @@ i {
 }
 
 /* Install Button END */
-
 .inline {
   display: inline-block;
 }
@@ -106,7 +116,6 @@ i {
 }
 
 /* Clear floats after the columns */
-
 .row:after {
   content: "";
   display: table;
@@ -177,9 +186,11 @@ header {
   background-image: linear-gradient(to right, #16A085, #138D75);
   width: 100%;
   color: white;
-  padding-top:  5vw;
-  padding-bottom: 7.5vw;
+  padding-top: 5vw;
+  padding-bottom: 75px !important;
+  height: 625px;
   border-radius: 150px 150px 75px 75px;
+  overflow: hidden;
 }
 
 #sayHello {
@@ -192,9 +203,33 @@ header {
   height: 75px;
   transition: .4s;
   font-family: 'Rubik', sans-serif;
+  outline: none;
 }
 
 #sayHello:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #138D75;
+  transform: scale(1.05);
+}
+
+.read-more-work-experience {
+  background-color: #16A085;
+  border-radius: 50px;
+  padding: 5px;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 50px;
+  transition: .4s;
+  font-family: 'Rubik', sans-serif;
+  outline: none;
+  font-size: 20px;
+  position: relative;
+  top: 50px;
+  outline: none !important;
+}
+
+.read-more-work-experience:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #138D75;
   transform: scale(1.05);
@@ -244,6 +279,7 @@ header {
 .anything h1 {
   font-size: 40px;
 }
+
 .skills p {
   position: relative;
   top: -30px;
@@ -287,12 +323,12 @@ header {
 }
 
 .triangle {
- width: 0;
- height: 0;
- display: inline-block;
- border-left: 250px solid transparent;
- border-right: 250px solid transparent;
- border-top: 500px solid #31A6ff;
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-top: 500px solid #31A6ff;
 }
 
 .graphicDesign {
@@ -301,7 +337,7 @@ header {
 }
 
 h5 {
-  font-size:150px;
+  font-size: 150px;
   color: #1565C0;
 }
 
@@ -340,12 +376,42 @@ h5 {
 }
 
 .twitterLink:hover {
- color: #1DA1F3;
- transform: scale(1.1);
+  color: #1DA1F3;
+  transform: scale(1.1);
+}
+
+#arrow-1 {
+  animation: read-more 1.5s infinite;
+}
+
+#arrow-2 {
+  animation: read-more 1.5s infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes read-more {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  40% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
 }
 
 /* Media Queries */
-
 @media screen and (max-width: 1500px) {
   .vp {
     font-size: 50px;
@@ -387,8 +453,6 @@ h5 {
   .footer {
     padding-bottom: 22.5%;
   }
-
-
 }
 
 @media screen and (min-width: 1435px) {

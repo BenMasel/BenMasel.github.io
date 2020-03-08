@@ -2,17 +2,17 @@
 window.sr = ScrollReveal();
 sr.reveal('.anim');
 
-$(function(){
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop(); // how many pixels you've scrolled
-        var os = $('#profile').offset().top; // pixels to the top of div1
-        var ht = $('#profile').height(); // height of div1 in pixels
-        // if you've scrolled further than the top of div1 plus it's height
-        // change the color. either by adding a class or setting a css property
-        if(scroll > os + ht){
-            $('#install').addClass('poop');
-        }
-    });
+$(function() {
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+    var os = $('#profile').offset().top; // pixels to the top of div1
+    var ht = $('#profile').height(); // height of div1 in pixels
+    // if you've scrolled further than the top of div1 plus it's height
+    // change the color. either by adding a class or setting a css property
+    if (scroll > os + ht) {
+      $('#install').addClass('poop');
+    }
+  });
 });
 
 // Age Calulator
@@ -25,9 +25,8 @@ $(function(){
 
 // document.getElementById('age').innerHTML = (calculate_age(new Date(0,0,0)));
 
-document.getElementById('say-hello-mailto').addEventListener('click', alert);
-document.getElementById('footer-mailto').addEventListener('click', alert);
+document.getElementById('read-more-work-experience').addEventListener('click', expandWorkExperience);
 
-function alert() {
- alert("Email Currently Not Available");
+function expandWorkExperience() {
+  document.getElementById('work-experience').style.height = "1000px";
 }
