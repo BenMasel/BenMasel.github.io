@@ -1,3 +1,5 @@
+$('#read-more-hidden').addClass('hide');
+
 // Scroll Animation If Class = anim
 window.sr = ScrollReveal();
 sr.reveal('.anim');
@@ -28,5 +30,6 @@ $(function() {
 document.getElementById('read-more-work-experience').addEventListener('click', expandWorkExperience);
 
 function expandWorkExperience() {
-  document.getElementById('work-experience').style.height = "1000px";
+  $('#read-more-hidden').removeClass('hide');
+  $('#read-more-hidden').removeClass('show');
 }
