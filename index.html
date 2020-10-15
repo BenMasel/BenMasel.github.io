@@ -1,295 +1,46 @@
 <!DOCTYPE html>
-<html lang="en-au">
+<html lang="en" dir="ltr">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Raleway|Rubik|Concert+One&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="fontawesome/css/all.css">
-  <link rel="shortcut icon" href="img/logo.png">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <title>Ventus | Portfolio</title>
+  <link rel="shortcut icon" href="img/logo.png">
+  <title>Ben | Portfolio</title>
 </head>
 
 <body>
-  <div class="install anim" id="install">
-    <a href="https://chrome.google.com/webstore/detail/everest/eemihbgpilllfcbhnhkobfgklfpdiiad" target="_blank" class="installButton">My Extension</a>
-  </div>
-  <header>
-    <div class="row">
-      <div class="column2">
-        <div class="title inline">
-          <h1>Ventus</h1>
-        </div>
-        <div class="title inline"><img src="img/logo.png" alt="logo" id="header-logo"></div>
-      </div>
-      <div class="column2">
-        <nav>
-          <br>
-          <div class="row">
-            <div class="column3"><a href="#work-experience">Work Experience</a></div>
-            <div class="column3"><a href="#projects">Projects</a></div>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <br>
-  <br>
-  <div class="content">
-    <img src="img/coding.svg" alt="code on a computer" id="codingImage">
-    <h2 class="vp">Coder. Designer. Computer Stuff.</h2>
-    <br>
-    <div class="features">
-      <div class="row">
-        <div class="column3 anim">
-          <i class="fas fa-code"></i>
-          <h3>Web Design</h3>
-          <p>HTML, CSS, JS</p>
-        </div>
-        <div class="column3 anim">
-          <i class="fas fa-pen"></i>
-          <h3>Graphic Designer</h3>
-          <p>Logos & Looks</p>
-        </div>
-        <div class="column3 anim">
-          <i class="fas fa-gamepad"></i>
-          <h3>Epic Gamer</h3>
-          <p>Brawlhalla, Minecraft, No Mans Sky</p>
+  <nav>
+    <img src="img/logo.jpg" alt="logo" id="logo" class="effect">
+    <h1 id="title" class="effect">Ben</h1>
+  </nav>
+  <div class="body">
+    <div class="flexbox main">
+      <div class="div effect">
+        <h2>👋Hi, my name is <span id="you">Ben</span>.</h2>
+        <div class="hideDiv">
+          <div class="line" id="line"></div>
         </div>
       </div>
     </div>
-    <br>
-    <div class="profile anim" id="profile">
-      <br>
-      <br>
-      <h1 class="anim hex-blue">Profile</h1>
-      <h3 class="anim">I'm a creative front-end webdeveloper</h3>
-      <div class="row">
-        <div class="column3">
-          <div class="anim">
-            <h2 class="inline">About</h2>
-            <div class="inline space1"></div>
-            <h2 class="hex-blue inline">Me</h2>
-            <div class="container">
-              <p class="anim inline" style="width: 375px;">I am an allround web developer. I am a young programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality.</p>
-            </div>
-          </div>
-        </div>
-        <div class="column3">
-          <img src="img/logo.png" alt="my face" style="max-width: 450px;">
-        </div>
-        <div class="column3">
-          <h2 class="hex-blue">Details</h2>
-          <p class="inline">Location:</p>
-          <p class="hex-blue inline">Australia, Earth</p>
-          <br>
-          <!-- <a href="https://twitter.com/masel_benjamin" target="_blank" style="font-size: 25px;">Follow me @masel_benjamin</a> -->
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="work-experience" id="work-experience">
-      <h1 class="anim">Work Experience</h1>
-      <br>
-      <br>
-      <div class="row">
-        <div class="column3">
-          <i class="far fa-window-maximize anim" style="position:relative;top:30px;font-size:100px;"></i>
-          <br>
-          <div style="height:100px;"></div>
-          <a class="anim white" href="https://orbitprojects.github.io/" style="font-size:50px;">Orbit Projects</a>
-          <div class="container">
-            <p class="inline anim anim ExperienceDescription">The homesite for Orbit Projects 🌎</p>
-          </div>
-        </div>
-        <div class="column3">
-          <i class="far fa-window-maximize anim" style="position:relative;top:30px;font-size:100px;"></i>
-          <br>
-          <div style="height:100px;"></div>
-          <a class="anim white" href="https://benmasel.github.io" style="font-size:50px;">This website</a>
-          <div class="container">
-            <p class="inline anim anim ExperienceDescription">Does this count? To be honest, i don't really care if it doesn't 😎.</p>
-          </div>
-        </div>
-        <div class="column3">
-          <i class="far fa-window-maximize anim" style="position:relative;top:30px;font-size:100px;"></i>
-          <br>
-          <div style="height:100px;"></div>
-          <a class="anim white" href="https://sites.google.com/view/veratransformationtarot/home" style="font-size:50px;">Vera Transformazione Tarot</a>
-          <div class="container">
-            <p class="inline anim anim ExperienceDescription">Tarot.</p>
-          </div>
-        </div>
-        <input type="button" class="read-more-work-experience" id="read-more-work-experience" value="Less Related">
-        <!-- <div class="read-more-animation" style="position: relative;right:15px;height:0px;">
-          <div class="inline container" style="position: relative;top:-50px;">
-            <i class="fas fa-angle-down" id="arrow-1"></i>
-          </div>
-          <div></div>
-          <div class="inline container" style="position: relative;top:-65px;">
-            <i class="fas fa-angle-down" id="arrow-2"></i>
-          </div>
-        </div> -->
-      </div>
-      <br>
-      <br>
-      <div class="row" id="read-more-hidden">
-        <div class="column">
-          <i class="fas fa-school anim" style="position:relative;top:30px;font-size:100px;"></i>
-          <br>
-          <div style="height:100px;"></div>
-          <a class="anim white" href="https://orbitprojects.github.io/" style="font-size:50px;">Working With Children</a>
-          <div class="container">
-            <p class="inline anim anim ExperienceDescription">I assisted in having fun with small children from a local school.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="potential">
-      <div class="anim">
-        <h1 class="inline change">I have</h1>
-        <div class="space1 inline change"></div>
-        <h1 class="inline green change">potential</h1>
-        <h1 class="inline fullStop">.</h1>
-      </div>
-      <div class="anim">
-        <button type="button" name="button" id="sayHello"><a class="white" id="say-hello-mailto">Say Hello!</a></button>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="skills">
-      <h1 class="anim">Skills</h1>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="row">
-        <div class="column3 anim">
-          <i class="fab fa-html5"></i>
-          <h3>HTML</h3>
-          <p class="fas fa-star inline"></p>
-          <p class="fas fa-star inline"></p>
-          <p class="fas fa-star inline"></p>
-          <p class="fas fa-star inline"></p>
-          <p class="fas fa-star inline"></p>
-        </div>
-        <div class="column3 anim">
-          <i class="fab fa-css3"></i>
-          <h3>CSS</h3>
-          <p class="fas fa-star inline"></p>
-          <p class="fas fa-star inline"></p>
-          <p class="fas fa-star inline"></p>
-          <p class="fas fa-star inline"></p>
-          <p class="fas fa-star inline"></p>
-        </div>
-        <div class="column3 anim">
-          <i class="fab fa-js-square"></i>
-          <h3>JS</h3>
-          <p class="fas fa-star inline"></p>
-          <p class="fas fa-star inline"></p>
-          <p class="far fa-star inline"></p>
-          <p class="far fa-star inline"></p>
-          <p class="far fa-star inline"></p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="teach-me">
-      <div class="anim">
-        <h1 class="inline">Teach me, and i will</h1>
-        <div class="space1 inline"></div>
-        <h1 class="inline red">learn</h1>
-        <h1 class="inline fullStop">.</h1>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="tools" id="projects">
-      <h1 class="anim">Projects</h1>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="row">
-        <div class="column2 anim">
-          <div>
-            <i class="fab fa-chrome anim"></i>
-            <br>
-            <i class="fas fa-puzzle-piece anim" style="position: relative;top:-50px;left:50px;color:#E5E8E8;"></i>
-          </div>
-          <a class="anim" href="https://chrome.google.com/webstore/detail/everest/eemihbgpilllfcbhnhkobfgklfpdiiad" target="_blank" style="font-size:50px;color:white;">Everest</a>
-          <div class="container">
-            <p class="inline anim ExperienceDescription">The new and improved look of your favourite newtab page extensions</p>
-          </div>
-        </div>
-        <div class="column2 anim">
-          <div>
-            <i class="fab fa-chrome anim"></i>
-            <br>
-            <i class="fas fa-puzzle-piece anim" style="position: relative;top:-50px;left:50px;color:#E5E8E8;"></i>
-          </div>
-          <a class="anim" href="https://chrome.google.com/webstore/detail/orbit-newtab/klcbneehagefpihiifgdapgfiihdokfo?hl=en" target="_blank" style="font-size:50px;color:white;">Orbit Newtab</a>
-          <div class="container">
-            <p class="inline anim ExperienceDescription">Give a clean and modern look to your default Chrome homepage.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="anything">
-      <div class="anim">
-        <h1 class="inline">“You can do</h1>
-        <div class="space1 inline"></div>
-        <h1 class="inline purple">anything</h1>
-        <div class="space1 inline"></div>
-        <h1 class="inline">you set your mind to.”</h1>
-        <h1>- Benjamin Franklin</h1>
-      </div>
-    </div>
-    <br>
-    <br>
     <div class="footer">
-      <div class="designBy">
-        <div class="row">
-          <div class="column2">
-            <p class="footer-text">DESIGNED BY</p>
-            <h3 style="font-size:50px;position:relative;top:-25px;" class="footer-main-text">Ventus</h3>
-            <p class="footer-text" style="font-size:25px;position:relative;top:-60px;">COPYRIGHT GPL-3.0 © 2019</p>
-          </div>
-          <div class="column2">
-            <div class="row">
-              <div class="column2">
-                <p class="footer-text">CONTACT</p>
-                <a class="footer-main-text" id="footer-mailto">Email</a>
-              </div>
-              <div class="column2 tal">
-                <p class="footer-text">SOCIAL</p>
-                <a target="_blank" class="fab fa-twitter twitterLink"></a>
-              </div>
-            </div>
-          </div>
+      <div class="flexbox">
+        <div class="column2">
+          <h1>Created by <span>Me</span></h1>
+          <p>COPYRIGHT GPL-3.0 © 2020</p>
+        </div>
+        <div class="column2 tar">
+            <a class="fab fa-github" href="https://github.com/BenMasel" target="_blank"></a>
+            <a class="fab fa-twitter"></a>
+            <a class="fab fa-discord"></a>
         </div>
       </div>
-      <div class="footer-about">
-        <p class="footer-text">ABOUT</p>
-        <p style="color:#353438;">I build rich HTML & CSS websites with amazing looks and functionality. This is my personal website.</p>
+
       </div>
-      <div style="font-size:25px;color:#353438;">Icons made by <a href="https://www.freepik.com/" title="Freepik" style="font-size:25px;">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style="font-size:25px;">www.flaticon.com</a>
-        is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" style="font-size:20px;">CC 3.0 BY</a></div>
     </div>
-    <script src="jquery/jquery.min.js"></script>
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
 </body>
 
 </html>
