@@ -7,7 +7,6 @@ body {
   font-weight: 300;
   margin: none;
   display: flex;
-  display: flex;
   justify-content: center;
   text-align: left;
 }
@@ -190,8 +189,8 @@ i {
 }
 
 .footer p {
- position: relative;
- top: -15px;
+  position: relative;
+  top: -15px;
 }
 
 /* width */
