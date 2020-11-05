@@ -112,7 +112,9 @@ nav {
   color: #24292E !important;
 }
 
-.fa-discord, .fa-twitter, .fa-github {
+.fa-discord,
+.fa-twitter,
+.fa-github {
   margin-left: 10px;
 }
 
