@@ -50,7 +50,7 @@ a:hover {
   border: none;
   background-color: #6C63FF;
   color: white;
-  border-radius: 7px;
+  border-radius: 25px;
   outline: none;
   font-size: 25px;
   font-family: Google Sans, Helvetica, Arial, sans-serif;
@@ -93,13 +93,6 @@ nav {
   height: 99vh;
 }
 
-.main2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 50vh;
-}
-
 .fa-discord:hover {
   color: #7289DA !important;
 }
@@ -112,9 +105,7 @@ nav {
   color: #24292E !important;
 }
 
-.fa-discord,
-.fa-twitter,
-.fa-github {
+.fa-discord, .fa-twitter, .fa-github {
   margin-left: 10px;
 }
 
@@ -223,6 +214,29 @@ i {
 
 .effect:hover {
   transform: rotate(1deg) scale(1.05);
+}
+
+.card {
+  /* ... */
+
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+
+  transition: .2s;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:hover~.card {
+  transform: translateX(130px);
+}
+
+
+.card:not(:first-child) {
+  margin-left: -130px;
 }
 
 @keyframes widen {
