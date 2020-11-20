@@ -11,6 +11,10 @@ body {
   text-align: left;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .body {
   width: 75vw;
 }
@@ -40,7 +44,7 @@ a {
 }
 
 a:hover {
-  color: #6C63FF;
+  color: #6c63ff;
   transform: rotate(15deg) scale(1.1);
 }
 
@@ -48,7 +52,7 @@ a:hover {
   width: 200px;
   padding: 10px;
   border: none;
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   color: white;
   border-radius: 25px;
   outline: none;
@@ -58,8 +62,38 @@ a:hover {
 }
 
 .button:hover {
-  background-color: #6C63f9;
+  background-color: #6c63f9;
   transform: scale(1.05);
+}
+
+.button2 {
+  width: 200px;
+  padding: 0px;
+  background-color: #6c63f9;
+  color: white;
+  outline: none;
+  font-size: 31px;
+  border: 5px solid white;
+  height: 80px;
+  font-family: Google Sans, Helvetica, Arial, sans-serif;
+  transition-duration: 300ms;
+}
+
+.button2:hover {
+  background-color: white;
+  color: #6c63f9 !important;
+}
+
+.button2active {
+  width: 80px;
+  background-color: white;
+}
+
+#resumeDownload {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  border-radius: 50px 0 50px 50px;
 }
 
 nav {
@@ -68,7 +102,7 @@ nav {
   position: fixed;
   left: 0px;
   top: 0px;
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   color: white;
   margin: none;
   border-radius: 0 0 50px 50px;
@@ -94,18 +128,20 @@ nav {
 }
 
 .fa-discord:hover {
-  color: #7289DA !important;
+  color: #7289da !important;
 }
 
 .fa-twitter:hover {
-  color: #1DA1F2 !important;
+  color: #1da1f2 !important;
 }
 
 .fa-github:hover {
-  color: #24292E !important;
+  color: #24292e !important;
 }
 
-.fa-discord, .fa-twitter, .fa-github {
+.fa-discord,
+.fa-twitter,
+.fa-github {
   margin-left: 10px;
 }
 
@@ -128,7 +164,7 @@ nav {
 }
 
 span {
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 #logo {
@@ -151,7 +187,7 @@ img {
 }
 
 .line {
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   width: 0vw;
   height: 5px;
   border-radius: 5px;
@@ -173,7 +209,7 @@ i {
 .footer {
   height: 100px;
   width: 100%;
-  border-top: 5px solid #6C63FF;
+  border-top: 5px solid #6c63ff;
   border-radius: 5px;
 }
 
@@ -223,17 +259,16 @@ i {
   background: #17141d;
   box-shadow: -1rem 0 3rem #000;
 
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .card:hover {
   transform: translateY(-1rem);
 }
 
-.card:hover~.card {
+.card:hover ~ .card {
   transform: translateX(130px);
 }
-
 
 .card:not(:first-child) {
   margin-left: -130px;
