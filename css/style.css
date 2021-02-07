@@ -1,14 +1,29 @@
+* {
+  transition-duration: 300ms;
+  font-family: Google Sans, Helvetica, Arial, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --color: #6c63ff;
+}
+
 body {
-  font-family: Google Sans, Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: none;
   display: flex;
   justify-content: center;
   text-align: left;
+  flex-direction: column;
+  align-items: center;
+}
+
+#scroll {
+  width: 100%;
+  height: 1px;
 }
 
 ::-webkit-scrollbar {
@@ -31,6 +46,11 @@ h2 {
   line-height: 0px;
 }
 
+h3 {
+  font-weight: 500;
+  font-size: 3vw;
+}
+
 a {
   font-size: 40px;
   color: #292929;
@@ -44,7 +64,7 @@ a {
 }
 
 a:hover {
-  color: #6c63ff;
+  color: var(--color);
   transform: rotate(15deg) scale(1.1);
 }
 
@@ -52,24 +72,23 @@ a:hover {
   width: 200px;
   padding: 10px;
   border: none;
-  background-color: #6c63ff;
+  background-color: var(--color);
   color: white;
   border-radius: 25px;
   outline: none;
   font-size: 25px;
   font-family: Google Sans, Helvetica, Arial, sans-serif;
-  transition-duration: 300ms;
 }
 
 .button:hover {
-  background-color: #6c63f9;
+  background-color: var(--color);
   transform: scale(1.05);
 }
 
 .button2 {
   width: 200px;
   padding: 0px;
-  background-color: #6c63f9;
+  background-color: var(--color);
   color: white;
   outline: none;
   font-size: 31px;
@@ -81,7 +100,7 @@ a:hover {
 
 .button2:hover {
   background-color: white;
-  color: #6c63f9 !important;
+  color: var(--color) !important;
 }
 
 .button2active {
@@ -102,12 +121,14 @@ nav {
   position: fixed;
   left: 0px;
   top: 0px;
-  background-color: #6c63ff;
+  background-color: var(--color);
   color: white;
   margin: none;
   border-radius: 0 0 50px 50px;
   display: flex;
   box-shadow: 0 5px 15px -5px #00000070;
+  transition-duration: 300ms;
+  z-index: 1000;
 }
 
 .div {
@@ -124,7 +145,44 @@ nav {
   align-items: center;
   flex-direction: column;
   text-align: left;
-  height: 99vh;
+  height: 100vh;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.codeLanguages {
+  width: 100px;
+  height: 100px;
+}
+
+.main2 {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 225px;
+}
+
+#sayHello {
+  background-color: var(--color);
+  font-size: 30px;
+  border-radius: 50px;
+  padding: 5px;
+  color: white;
+  border: none;
+  width: 250px;
+  height: 75px;
+  transition: 0.4s;
+  outline: none;
+}
+
+#sayHello:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
 }
 
 .fa-discord:hover {
@@ -164,7 +222,7 @@ nav {
 }
 
 span {
-  color: #6c63ff;
+  color: var(--color);
 }
 
 #logo {
@@ -181,13 +239,17 @@ span {
   text-align: right;
 }
 
+.tal {
+  text-align: left;
+}
+
 img {
   width: 90%;
   height: 90%;
 }
 
 .line {
-  background-color: #6c63ff;
+  background-color: var(--color);
   width: 0vw;
   height: 5px;
   border-radius: 5px;
@@ -209,7 +271,7 @@ i {
 .footer {
   height: 100px;
   width: 100%;
-  border-top: 5px solid #6c63ff;
+  border-top: 5px solid var(--color);
   border-radius: 5px;
 }
 
@@ -250,28 +312,6 @@ i {
 
 .effect:hover {
   transform: rotate(1deg) scale(1.05);
-}
-
-.card {
-  /* ... */
-
-  border-radius: 16px;
-  background: #17141d;
-  box-shadow: -1rem 0 3rem #000;
-
-  transition: 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-1rem);
-}
-
-.card:hover ~ .card {
-  transform: translateX(130px);
-}
-
-.card:not(:first-child) {
-  margin-left: -130px;
 }
 
 @keyframes widen {

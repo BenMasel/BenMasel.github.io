@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400500,700">
   <link href="fontawesome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/logo.png">
@@ -11,27 +11,64 @@
 </head>
 
 <body>
-  <nav>
+  <nav id='nav'>
     <img src="img/logo.jpg" alt="logo" id="logo" class="effect">
     <h1 id="title" class="effect">Ben</h1>
-    <div class="nav-right">
-      <!-- <form action="img/logo.png" method="get"> -->
-      <button class="button2" id="resumeDownload" type="submit" download>Résumé</button>
-      <!-- </form> -->
-    </div>
+    <!-- <div class="nav-right">
+      <form action="img/logo.png" method="get">
+        <button class="button2" id="resumeDownload" type="submit" download>Résumé</button>
+      </form>
+    </div> -->
+
   </nav>
+  <div id='scroll'></div>
   <div class="body">
     <div class="flexbox main">
-      <div class="div effect">
+      <div class="div effect" id='intro'>
         <h2>👋Hi, my name is <span id="you">Ben</span>.</h2>
         <div class="hideDiv">
           <div class="line" id="line"></div>
         </div>
       </div>
     </div>
+    <div class="flexbox main2" id='aboutMe'>
+      <h2>My <span>Profile</span></h2>
+      <h1>Im a <span id='age'></span> year old dev from Aus</h1>
+      <br>
+      <br>
+      <div class="flexbox">
+        <div class="column2">
+          <img src="img/webdev.svg" id="webdev">
+        </div>
+        <div class="column2 tal" style="position:relative;top:-35px;">
+          <h3>I'm currently learning <span>HTML</span>, <span>CSS</span>, and <span>JS</span></h3>
+          <div class='flexbox'>
+            <img src="img/html.png" alt="html" class="codeLanguages">
+            <img src="img/css.png" alt="css" class="codeLanguages">
+            <img src="img/javascript.png" alt="js" class="codeLanguages">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="flexbox main2" id='projects'>
+      <div class="flexbox">
+        <div class="column2">
+          <h2><span>Projects</span></h2>
+          <h3>He</h3>
+        </div>
+        <div class="column2">
+          <img src="img/projects.svg" alt="web developer" id='projectsImage'>
+        </div>
+      </div>
+    </div> -->
+    <div class="flexcenter main2" id="contact">
+      <h2>I have <span>potential</span>.</h2>
+      <br>
+      <button id="sayHello" onClick='unavailable()'>Say Hello!</button>
+    </div>
     <div>
     </div>
-    <div class="footer">
+    <div class="footer" id='footer'>
       <div class="flexbox">
         <div class="column2">
           <h1>Created by <span>Me</span></h1>
